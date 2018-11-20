@@ -1,0 +1,16 @@
+[user]
+	name = Taciano Morais Silva
+	email = tacianosilva@gmail.com
+[color]
+	ui = true
+[core]
+	autocrlf = input
+[pull]
+	rebase = true
+[push]
+	default = simple
+[rerere]
+	enabled = true
+[alias]
+	s = status -s
+	lg = log --oneline --decorate --all --graph
