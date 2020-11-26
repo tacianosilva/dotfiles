@@ -1,0 +1,27 @@
+Passo 01: Instalar zsh
+    sudo apt install zsh
+Passo 02: Instalar o oh-my-zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+Passo 03: Instalar o suport para fontes powerline
+    sudo apt-get install fonts-powerline
+    ou
+    # clone
+    git clone https://github.com/powerline/fonts.git --depth=1
+    # install
+    cd fonts
+    ./install.sh
+    # clean-up a bit
+    cd ..
+    rm -rf fonts
+Passo 04: Instalar o Powerlevel9k:
+    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+Passo 05: No arquivo ~/.zshrc
+    ZSH_THEME="powerlevel9k/powerlevel9k"
+Passo 06: Selecionar uma fonte do tipo Nerdfont no repositório baixar e instalar e utilizar no terminal
+    https://github.com/ryanoasis/nerd-fonts#patched-fonts
+Passo 07: Abrir o arquivo ~/.zshrc
+    POWERLEVEL9K_MODE="nerdfont-complete"
+Passo 08: Utilizar os links
+    - (O que já pode colocar no shell) https://github.com/bhilburn/powerlevel9k#available-prompt-segments
+    - (sugestão de .zshrc) https://github.com/ArthurGorgonio/Dotfiles/blob/master/zshrc
+    - (Procurando um caractere específico) http://bluejamesbond.github.io/CharacterMap/
